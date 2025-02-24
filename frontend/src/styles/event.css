@@ -1,0 +1,220 @@
+/* General styles */
+.event-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+.event-page h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #af4c4eb8;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #9a0845;
+    padding-bottom: 10px;
+  }
+  
+
+.calendar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Take remaining space */
+  margin-left: 260px; /* Adjust based on sidebar width */
+  padding: 20px;
+  overflow: hidden;
+  }
+  
+  /* Styling the Add Event Form */
+  .add-event-form {
+    margin-bottom: 20px;
+  }
+  
+  .add-event-form h2 {
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .add-event-form input,
+  .add-event-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .add-event-form textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  .add-event-form button {
+    width: 100%;
+    background: linear-gradient(45deg, #be4f95, #cb1177);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-event-form button:hover {
+    background: linear-gradient(45deg, #b30077, #9d5cf2);
+  }
+  
+  /* React Big Calendar styles */
+  .rbc-calendar {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Smaller Date Containers */
+  .rbc-date-cell {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .rbc-day-bg {
+    height: 50px;
+  }
+  
+  .rbc-month-view {
+    height: 450px;
+  }
+  
+  /* Toolbar (Month, Week, Day Buttons) */
+  .rbc-toolbar {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .rbc-toolbar button {
+    background: linear-gradient(45deg, #a93f4d, #a62751);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .rbc-toolbar button:hover {
+    background: linear-gradient(45deg, #b30009, #a10836);
+  }
+  
+  /* Events Styling */
+  .rbc-event {
+    background-color: #bb2727;
+    color: white;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .rbc-event:hover {
+    background-color: #b3000c;
+  }
+  
+  /* POP-UP (MODAL) STYLES */
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000 !important;
+  }
+  
+  .ReactModal__Content {
+    z-index: 1001 !important;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Prevent calendar dates from appearing inside pop-up */
+  .ReactModal__Content .rbc-calendar {
+    display: none !important;
+  }
+
+  .rbc-calendar, .rbc-month-view, .rbc-event {
+    z-index: 0;
+  }
+  
+  /* Pop-up content styling */
+  .ReactModal__Content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ReactModal__Content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Close button */
+  .ReactModal__Content button {
+    background: linear-gradient(45deg, #007bff, #6a11cb);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .ReactModal__Content button:hover {
+    background: linear-gradient(45deg, #0056b3, #4a08a1);
+  }
+
+  /* Style the date & time input fields */
+.add-event-form input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* When input is focused */
+  .add-event-form input[type="datetime-local"]:focus {
+    border-color: #007bff;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Adjusting layout for better alignment */
+  .add-event-form .datetime-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .add-event-form .datetime-container input {
+    width: calc(50% - 5px);
+  }
+  
+  

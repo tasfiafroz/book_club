@@ -1,0 +1,215 @@
+body {
+    background-color: #fdfffa;
+}
+
+.bigimg img{
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #466f04;
+}
+
+.title p {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #78bc0a;
+}
+
+.title h1::first-letter {
+    font-size: 50px;
+    font-style: italic;
+}
+
+.explain {
+    /* width: 50%; */
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.houseplant-container {
+    /* background-color: #b8c1a9; */
+    width: 65%;
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+    margin-left: 350px;
+
+}
+
+.styled-heading {
+    /* padding-top: 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a3b1e; /* Dark green */
+    font-family: 'Georgia', serif;
+}
+
+.styled-heading span {
+    /* background-color: #e6eddc; */
+    background-color: #c8d3b8;
+    padding: 8px 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.styled-heading::before,
+.styled-heading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #b8c1a9; /* Light green line */
+    z-index: 0;
+}
+
+.styled-heading::before {
+    left: 0;
+}
+
+.styled-heading::after {
+    right: 0;
+}
+  
+  .images {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .box {
+    flex: 1 1 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px);
+    height: 250px;
+    border-radius: 10px;
+  }
+  
+  .box img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+  }
+  
+  .box p {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: #184c3f;
+    
+  }
+  
+  .box a {
+    text-decoration: none;
+  }
+  .plant-info {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    text-align: center;
+    z-index: 1000;
+    background-color:rgba(248, 249, 247, 0.7); 
+    backdrop-filter: blur(5px);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.close:hover {
+    color: #cc0000;
+}
+
+
+
+.plant-info {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(8px); /* Glass effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%; /* Set fixed width */
+    max-width: 600px; /* Prevent it from becoming too wide */
+    height: 70vh; /* Set fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    text-align: left;
+    z-index: 1000;
+}
+
+
+.plant-info.active {
+    display: block;
+  }
+
+/* Optional: Style the scrollbar (for better appearance) */
+.plant-info::-webkit-scrollbar {
+    width: 8px;
+}
+
+.plant-info::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.plant-info::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+.heading {
+    text-align: center;
+    color: #325717;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li {
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+p {
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}

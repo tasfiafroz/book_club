@@ -1,0 +1,122 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #FEFDED;
+    padding-top: 40px; /* Increased top padding for better spacing */
+    padding-left: 20px; /* Add padding to the left for better spacing */
+    padding-right: 20px; /* Added padding to the right to balance the spacing */
+    color: black;
+    z-index: 10;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Added shadow for visual separation */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures space between content and button */
+}
+
+/* Navigation links */
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar ul li {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0; /* Added margin between links */
+}
+
+.sidebar ul a {
+    font-family: "Fira Sans", sans-serif;
+    text-decoration: none;
+    font-size: 18px; /* Reduced font size for better readability */
+    color: #063b2e;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+.sidebar ul a:hover {
+    color: #0d4033;
+    background-color: rgba(0, 0, 0, 0.05);
+    text-decoration: underline;
+}
+
+/* Sidebar Button */
+.sidebar button {
+    background-color: #933a3d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Button width set to 80% */
+    margin-top: auto; /* Pushes the button to the bottom of the sidebar */
+    text-align: center; /* Center the button */
+}
+
+.sidebar button:hover {
+    background-color: #5e2222;
+}
+
+/* Auth links at the bottom */
+.auth-links {
+    width: 100%;
+    text-align: center; /* Center the links horizontally */
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.auth-links a {
+    color: #34495e;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.auth-links a:hover {
+    background-color: #34495e;
+    color: white;
+    padding: 5px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Reduced width for smaller screens */
+        padding-top: 20px;
+    }
+
+    .sidebar ul a {
+        font-size: 16px; /* Smaller font size for mobile */
+        padding: 10px 15px; /* Adjust padding for mobile */
+    }
+
+    .auth-links {
+        bottom: 20px; /* Adjust bottom for mobile */
+    }
+
+    .auth-links a {
+        font-size: 16px; /* Smaller font size for mobile */
+        margin-bottom: 10px; /* Adjust margin for mobile */
+    }
+
+    .sidebar button {
+        font-size: 14px; /* Smaller font size for button on mobile */
+        padding: 8px 15px; /* Adjust padding for mobile */
+    }
+}

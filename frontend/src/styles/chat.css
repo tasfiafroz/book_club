@@ -1,0 +1,154 @@
+/* Styles for the Chat Page */
+.chat-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa, #e2e1ff); /* Soft gradient background */
+    font-family: 'Arial', sans-serif;
+}
+
+.chat-page .chat-component {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 90%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Join Room Styles */
+.chat-page .join-room-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chat-page .input-field {
+    padding: 10px;
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.chat-page .input-field:focus {
+    border-color: #9c88ff; /* Soft purple border on focus */
+}
+
+.chat-page .join-button {
+    padding: 10px;
+    background-color: #9c88ff; /* Soft purple button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-page .join-button:hover {
+    background-color: #8c7ae6; /* Slightly darker purple on hover */
+}
+
+/* Chat Room Styles */
+.chat-page .chat-room-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-page .messages-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling */
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add spacing between messages */
+}
+
+/* Message Styles */
+.chat-page .message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages from other users (left side) */
+.chat-page .message-left {
+    align-self: flex-start; /* Align to the left */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+/* Messages from the current user (right side) */
+.chat-page .message-right {
+    align-self: flex-end; /* Align to the right */
+    background-color: #9c88ff; /* Soft purple background */
+    color: white; /* White text */
+    border: 1px solid #9c88ff; /* Purple border */
+}
+
+/* Sender name styles */
+.chat-page .message-sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px; /* Ensure sender name is not too large */
+}
+
+/* Message text styles */
+.chat-page .message-text {
+    word-wrap: break-word;
+    font-size: 14px; /* Ensure text is not too small */
+}
+
+/* Message Input Styles */
+.chat-page .message-input-container {
+    display: flex;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.chat-page .message-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.chat-page .message-input:focus {
+    border-color: #9c88ff; /* Soft purple border on focus */
+}
+
+.chat-page .send-button {
+    margin-left: 10px;
+    padding: 12px 24px;
+    background-color: #9c88ff; /* Soft purple button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-page .send-button:hover {
+    background-color: #8c7ae6; /* Slightly darker purple on hover */
+}
